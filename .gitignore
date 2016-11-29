@@ -1,5 +1,5 @@
 0-get-data/snapshot
 0-get-data/*.json
 node_modules
-1-js-process/*.json
+1-js-process/parsed-assessment-items.json
 2-analyze/wtypes

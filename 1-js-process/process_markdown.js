@@ -1,12 +1,12 @@
-
+#!/usr/bin/env node
 console.log('start')
 const parse = require('./node-perseus').PerseusMarkdown.parse
 console.log('loaded perseus')
 
-const data = require('./small_items.json')
+const data = require('./../0-get-data/assessment_items.json')
 console.log('loaded data')
 var x = '['
-const out = require('fs').createWriteStream('./parsed.json')
+const out = require('fs').createWriteStream('./parsed-assessment-items.json')
 out.write('[')
 
 const walk = obj => {
@@ -25,15 +25,17 @@ const walk = obj => {
 }
 
 const writeDatom = (datum, i) => {
-  datum.item_data.question.content = parse(datum.item_data.question.content)
-  walk(datum.item_data.question.widgets)
-  datum.item_data.hints.forEach(hint => {
+  datum.parsed_item_data = JSON.parse(datum.item_data)
+  datum.parsed_item_data.question.content = parse(datum.parsed_item_data.question.content)
+  walk(datum.parsed_item_data.question.widgets)
+  datum.parsed_item_data.hints.forEach(hint => {
     walk(hint.widgets)
     hint.content = parse(hint.content)
   })
   out.write(JSON.stringify(datum))
   if (i < data.length - 1) out.write(',')
 }
+
 data.forEach(writeDatom)
 console.log('writing')
 
