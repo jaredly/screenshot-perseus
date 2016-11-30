@@ -3,3 +3,4 @@
 node_modules
 1-js-process/parsed-assessment-items.json
 2-analyze/wtypes
+3-snapshot/src/*/*.png

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
+<title>Perseus</title>
+
+<link rel="stylesheet" type="text/css" href="stylesheets/local-only/khan-site.css" />
+<link rel="stylesheet" type="text/css" href="stylesheets/local-only/khan-exercise.css" />
+<link rel="stylesheet" type="text/css" href="lib/katex/katex.css" />
+<link rel="stylesheet" type="text/css" href="lib/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="lib/mathquill/mathquill.css" />
+<link rel="stylesheet" type="text/css" href="stylesheets/perseus-admin-package/devices.min.css" />
+
+<link rel="stylesheet/less" type="text/css" href="stylesheets/exercise-content-package/perseus.less" />
+<link rel="stylesheet/less" type="text/css" href="stylesheets/perseus-admin-package/editor.less" />
+<style>
+    body {
+        min-width: 0 !important;
+        /* overrides body { min-width: 1000px; } in khan-site.css */
+    }
+    .framework-perseus.perseus-mobile {
+        margin-top: 0!important;
+    }
+</style>
+
+<script>less = {env: 'development', logLevel: 1};</script>
+<script>localStorage.xomManatee = true</script>
+<script src="lib/less.js"></script>
+
+</head>
+<body>
+<div id="perseus-container">
+</div>
+<!-- put an empty div here so the margin on the perseus editor has something
+to "push against" (without the div, the padding goes off the page, and the
+add hint button ends up touching the bottom of the page). -->
+<div class="clear"></div>
+<script src="lib/babel-polyfills.min.js"></script>
+<script src="lib/jquery.js"></script>
+<script src="lib/underscore.js"></script>
+<script src="lib/react-with-addons.js"></script>
+<script src="lib/mathjax/2.1/MathJax.js?config=KAthJax-e76365d62c31e1cbafe939bf94aa8497&amp;delayStartupUntil=configured"></script>
+<script src="lib/katex/katex.js"></script>
+<script src="lib/mathquill/mathquill-basic.js"></script>
+<script src="lib/kas.js"></script>
+<script src="lib/i18n.js"></script>
+<script src="lib/jquery.qtip.js"></script>
+
+<script src="build.js"></script>
+
+</body>
+</html>
