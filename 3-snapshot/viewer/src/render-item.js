@@ -8,8 +8,7 @@ const renderItem = module.exports = (item, node, isMobile) => {
   const className = isMobile ?
     "framework-perseus " + ApiClassNames.MOBILE :
     "framework-perseus";
-  const rendererComponent =
-    <div className={className} style={{padding: 20, backgroundColor: 'white'}}>
+  const rendererComponent = <div className={className}>
     <ItemRenderer
       item={item}
       problemNum={1}

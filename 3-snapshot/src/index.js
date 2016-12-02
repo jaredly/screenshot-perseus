@@ -1,60 +1,99 @@
-const wc = require('electron').remote.getCurrentWebContents()
-const fs = require('fs')
 const path = require('path')
 window.alert = n => console.log('ALERTED', n)
 
-const renderOne = (data, parent, annotation) => {
-  const node = document.createElement('div')
-  node.style.position = 'relative'
-  parent.appendChild(node)
-  const inner = document.createElement('div')
-  const num = document.createElement('div')
-  num.innerHTML = annotation
-  num.style.position = 'absolute'
-  num.style.right = '10px'
-  num.style.bottom = 0
-  num.style.color = '#777'
-  num.style.opacity = 0.5
+const renderNShoot = require('./renderNShoot')
+const renderOne = require('./renderOne')
+const shootOne = require('./shootOne')
+const base = path.join(__dirname, '..', 'data', 'samples')
 
-  node.appendChild(inner)
-  node.appendChild(num)
-
-  window.perseusRenderer.renderItem(JSON.parse(data), inner, true)
-  return node
+const pad = (num, size) => {
+  let t = num + '';
+  while (t.length < size) {
+    t = '0' + t
+  }
+  return t
 }
 
-const shootOne = (node, dest, done) => {
-  const box = node.getBoundingClientRect()
-  wc.capturePage({
-    x: Math.floor(box.left),
-    y: Math.floor(box.top),
-    width: Math.ceil(box.width),
-    height: Math.ceil(box.height),
-  }, image => {
-    fs.writeFileSync(dest, image.toPNG())
-    console.log('wrote to', dest)
-    done()
-  })
+const shootDescription = (sample, si, done) => {
+  const dest = path.join(base, `sample-${pad(si, 2)}-desc.png`)
+  const annotation = `${si}: ${sample.count} items\n${sample.readable}\n`
+  const node = document.createElement('div')
+  node.innerHTML = annotation
+  node.style.whiteSpace = 'pre'
+  node.style.display = 'inline-block'
+  node.style.boxSizing = 'border-box'
+  node.style.border = '1px solid #ccc'
+  node.style.padding = '10px'
+  document.body.appendChild(node)
+  setTimeout(() => {
+    shootOne(node, dest, () => {
+      document.body.removeChild(node)
+      done()
+    })
+  }, 100)
+}
+
+const testRender = window.testRender = (item, annotation) => {
+  const parent = document.getElementById('perseus-container')
+  parent.innerHTML = ''
+  renderOne(item.item_data, parent, annotation || '')
+}
+
+const clearTestRender = window.clearTestRender = () => {
+  const parent = document.getElementById('perseus-container')
+  parent.innerHTML = ''
 }
 
 window.perseusRenderer.ready.then(() => {
-})
+  const samples = window.samples = require('../../2-analyze/wtypes/sample-top-20-percent.json')
 
-/*
-const dests = {
-  'n-1': 'math-expression',
-  'n-2': 'boldmathtext-expression',
-  'n-3': 'boldmathtext-radio',
-}
-*/
+  const configs = []
+
+  window.shootDescriptions = () => {
+    const next = n => {
+      if (n >= samples.length) return console.log('done')
+      shootDescription(samples[n], n, () => next(n + 1))
+    }
+    next(0)
+  }
+
+  window.addAllSections = () => {
+    for (var i=0; i<samples.length; i++) {
+      addSection(i)
+    }
+  }
+
+  window.addSection = si => {
+    const sample = samples[si]
+    sample.items.forEach((item, ii) => {
+      const annotation = `${si} - ${ii}`
+      configs.push({
+        annotation,
+        dest: path.join(base, `sample-${pad(si, 2)}-${ii}.png`),
+        item,
+      })
+    })
+  }
 
   /*
-  // let node = document.getElementById('perseus-container')
-  // window.perseusRenderer.renderItem(JSON.parse(items[0].item_data), node, true)
-  // const batch = 5
-    // window.perseusRenderer.renderItem(JSON.parse(items[num].item_data), node, true)
-  const next = num => {
-    // if (num < items.length) setTimeout(() => next(num + 1), 10)
-  }
-  next(0)
+  samples.forEach((sample, si) => {
+    sample.items.forEach((item, ii) => {
+      let annotation = `${si} - ${ii}`
+      annotation = (ii == 0 ? sample.readable + `\n${sample.count} items\n` : '') + annotation
+      configs.push({
+        annotation,
+        dest: path.join(base, `sample-${pad(si, 2)}-${ii}.png`),
+        item,
+      })
+    })
+  })
   */
+
+  window.go = () => {
+    renderNShoot(configs.slice(), 500, () => {
+      console.log('DONE')
+    })
+    configs.splice(0, configs.length)
+  }
+})
+
