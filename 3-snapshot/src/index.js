@@ -45,7 +45,8 @@ const clearTestRender = window.clearTestRender = () => {
 }
 
 window.perseusRenderer.ready.then(() => {
-  const samples = window.samples = require('../../2-analyze/wtypes/sample-top-20-percent.json')
+  // const samples = window.samples = require('../../2-analyze/wtypes/sample-top-20-percent.json')
+  const samples = window.samples = require('../../2-analyze/wtypes/all-configs.json')
 
   const configs = []
 
@@ -57,14 +58,20 @@ window.perseusRenderer.ready.then(() => {
     next(0)
   }
 
-  window.addAllSections = () => {
-    for (var i=0; i<samples.length; i++) {
+  window.addAllSections = (start=0) => {
+    for (var i=start; i<samples.length; i++) {
       addSection(i)
     }
   }
 
   window.addSection = si => {
     const sample = samples[si]
+    configs.push({
+      annotation: `${si}\n${sample.readable}`,
+      dest: path.join(base, `all-sample-${pad(si, 4)}.png`),
+      item: sample.first_item,
+    })
+    /*
     sample.items.forEach((item, ii) => {
       const annotation = `${si} - ${ii}`
       configs.push({
@@ -73,6 +80,7 @@ window.perseusRenderer.ready.then(() => {
         item,
       })
     })
+    */
   }
 
   /*
@@ -88,6 +96,17 @@ window.perseusRenderer.ready.then(() => {
     })
   })
   */
+
+  window.justOne = si => {
+    const sample = samples[si]
+    const config = {
+      annotation: `${si}\n${sample.readable}`,
+      dest: path.join(base, `all-sample-${pad(si, 4)}.png`),
+      item: sample.first_item,
+    }
+    const parent = document.getElementById('perseus-container')
+    renderOne(config.item.item_data, parent, config.annotation)
+  }
 
   window.go = () => {
     renderNShoot(configs.slice(), 500, () => {
