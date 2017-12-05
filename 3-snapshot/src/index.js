@@ -44,6 +44,7 @@ const clearTestRender = window.clearTestRender = () => {
   parent.innerHTML = ''
 }
 
+if (false) {
 window.perseusRenderer.ready.then(() => {
   // const samples = window.samples = require('../../2-analyze/wtypes/sample-top-20-percent.json')
   const samples = window.samples = require('../../2-analyze/wtypes/all-configs.json')
@@ -114,5 +115,25 @@ window.perseusRenderer.ready.then(() => {
     })
     configs.splice(0, configs.length)
   }
+})
+
+}
+
+
+window.perseusRenderer.ready.then(() => {
+  // const samples = window.samples = require('../../2-analyze/wtypes/sample-top-20-percent.json')
+  const items = window.items = require('../../findthis2.json')
+
+  const configs = []
+
+  let i = -1
+  window.next = () => {
+    i += 1
+    const parent = document.getElementById('perseus-container')
+    parent.innerHTML = ''
+    console.log(items[i].content_id, i)
+    renderOne(items[i].item_data, parent, `Item ${i}`)
+  }
+
 })
 

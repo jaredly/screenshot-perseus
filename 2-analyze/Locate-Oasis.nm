@@ -1,0 +1,1847 @@
+[
+  {
+    "created": 1480373966640,
+    "modified": 1480444452118,
+    "content": "Locate Oasis",
+    "children": [
+      {
+        "created": 1480408194344,
+        "modified": 1480408194344,
+        "collapsed": true,
+        "content": "Main things to start with tomorrow",
+        "type": "base",
+        "children": []
+      },
+      {
+        "created": 1480408192408,
+        "modified": 1480408192408,
+        "collapsed": false,
+        "content": "separate items out by subject",
+        "type": "todo",
+        "children": [
+          {
+            "created": 1480408212921,
+            "modified": 1480408212921,
+            "collapsed": true,
+            "content": "this will probably weed out a bunch of inactive/unused items",
+            "type": "base",
+            "children": []
+          },
+          {
+            "created": 1480408224168,
+            "modified": 1480408224168,
+            "collapsed": true,
+            "content": "also allow for better trends within content areas",
+            "type": "base",
+            "children": []
+          }
+        ]
+      },
+      {
+        "created": 1480408238431,
+        "modified": 1480408238431,
+        "collapsed": true,
+        "content": "maybe do analysis by author, see if there are differences?",
+        "type": "todo",
+        "children": []
+      },
+      {
+        "created": 1480407890357,
+        "modified": 1480444354989,
+        "collapsed": true,
+        "content": "Imports n stuff",
+        "type": "base",
+        "children": [
+          {
+            "created": 1480373968415,
+            "modified": 1480444316926,
+            "collapsed": true,
+            "content": "cd ~/khan/repos/exercises-mobile-preview/scripts/",
+            "type": "ipython",
+            "children": [],
+            "itreed": {
+              "server": "jupyter",
+              "kernel": "python2",
+              "variant": "default"
+            },
+            "waiting": false,
+            "started": 1480444316914,
+            "session": "1277ddc4-c5b8-4fd1-8355-fc88b9fafd28",
+            "executed": "cd ~/khan/repos/exercises-mobile-preview/scripts/",
+            "finished": 1480444316926,
+            "display_collapsed": false,
+            "outputs": [
+              {
+                "type": "stream",
+                "stream": "stdout",
+                "text": "/Users/jared/khan/repos/exercises-mobile-preview/scripts\n"
+              }
+            ]
+          },
+          {
+            "created": 1480373980370,
+            "modified": 1480444316927,
+            "collapsed": true,
+            "content": "import json",
+            "type": "ipython",
+            "children": [],
+            "itreed": {
+              "server": "jupyter",
+              "kernel": "python2",
+              "variant": "default"
+            },
+            "waiting": false,
+            "started": 1480444316926,
+            "session": "1277ddc4-c5b8-4fd1-8355-fc88b9fafd28",
+            "executed": "import json",
+            "finished": 1480444316927,
+            "display_collapsed": false,
+            "outputs": []
+          },
+          {
+            "created": 1480378040281,
+            "modified": 1480444316927,
+            "collapsed": true,
+            "content": "import types",
+            "type": "ipython",
+            "children": [],
+            "itreed": {
+              "server": "jupyter",
+              "kernel": "python2",
+              "variant": "default"
+            },
+            "waiting": false,
+            "started": 1480444316926,
+            "session": "1277ddc4-c5b8-4fd1-8355-fc88b9fafd28",
+            "executed": "import types",
+            "finished": 1480444316927,
+            "display_collapsed": false,
+            "outputs": []
+          },
+          {
+            "created": 1480405274900,
+            "modified": 1480444317236,
+            "collapsed": true,
+            "content": "import re",
+            "type": "ipython",
+            "children": [],
+            "itreed": {
+              "server": "jupyter",
+              "kernel": "python2",
+              "variant": "default"
+            },
+            "waiting": false,
+            "started": 1480444316927,
+            "session": "1277ddc4-c5b8-4fd1-8355-fc88b9fafd28",
+            "executed": "import re",
+            "finished": 1480444317236,
+            "display_collapsed": false,
+            "outputs": []
+          },
+          {
+            "created": 1480444349781,
+            "modified": 1480444354326,
+            "collapsed": true,
+            "content": "from collections import defaultdict",
+            "type": "ipython",
+            "children": [],
+            "itreed": {
+              "server": "jupyter",
+              "kernel": "python2",
+              "variant": "default"
+            },
+            "waiting": false,
+            "started": 1480444354326,
+            "session": "1277ddc4-c5b8-4fd1-8355-fc88b9fafd28",
+            "executed": "from collections import defaultdict",
+            "finished": 1480444354326,
+            "display_collapsed": false,
+            "outputs": []
+          },
+          {
+            "created": 1480399877866,
+            "modified": 1480444317236,
+            "collapsed": true,
+            "content": "%pylab inline",
+            "type": "ipython",
+            "children": [],
+            "itreed": {
+              "server": "jupyter",
+              "kernel": "python2",
+              "variant": "default"
+            },
+            "waiting": false,
+            "started": 1480444316927,
+            "session": "1277ddc4-c5b8-4fd1-8355-fc88b9fafd28",
+            "executed": "%pylab inline",
+            "finished": 1480444317236,
+            "display_collapsed": false,
+            "outputs": [
+              {
+                "type": "stream",
+                "stream": "stdout",
+                "text": "Populating the interactive namespace from numpy and matplotlib\n"
+              }
+            ]
+          }
+        ],
+        "itreed": {
+          "server": "jupyter",
+          "kernel": "python2",
+          "variant": "default"
+        }
+      },
+      {
+        "created": 1480438184088,
+        "modified": 1480444504252,
+        "collapsed": true,
+        "content": "Topic Tree",
+        "type": "base",
+        "children": [
+          {
+            "created": 1480441346040,
+            "modified": 1480441346040,
+            "collapsed": true,
+            "content": "Gist: use `math_items` for all assessment items under world of math, and `segmented_items` to get other things. `ttree_raw[key]['title']` will get you the title of a topic",
+            "type": "base",
+            "children": []
+          },
+          {
+            "created": 1480438191504,
+            "modified": 1480444357844,
+            "collapsed": true,
+            "content": "ttree_raw = json.load(open('./0-get-data/topics.json'))",
+            "type": "ipython",
+            "children": [],
+            "itreed": {
+              "server": "jupyter",
+              "kernel": "python2",
+              "variant": "default"
+            },
+            "waiting": false,
+            "started": 1480444356662,
+            "session": "1277ddc4-c5b8-4fd1-8355-fc88b9fafd28",
+            "executed": "ttree_raw = json.load(open('./0-get-data/topics.json'))",
+            "finished": 1480444357843,
+            "display_collapsed": false,
+            "outputs": []
+          },
+          {
+            "created": 1480438208319,
+            "modified": 1480444357887,
+            "collapsed": true,
+            "content": "len(ttree_raw)",
+            "type": "ipython",
+            "children": [],
+            "itreed": {
+              "server": "jupyter",
+              "kernel": "python2",
+              "variant": "default"
+            },
+            "waiting": false,
+            "started": 1480444357842,
+            "session": "1277ddc4-c5b8-4fd1-8355-fc88b9fafd28",
+            "executed": "len(ttree_raw)",
+            "finished": 1480444357887,
+            "display_collapsed": false,
+            "outputs": [
+              {
+                "text/plain": "10617",
+                "type": "display",
+                "metadata": {}
+              }
+            ]
+          },
+          {
+            "created": 1480438212198,
+            "modified": 1480444357891,
+            "collapsed": true,
+            "content": "ttree_raw[ttree_raw.keys()[0]]",
+            "type": "ipython",
+            "children": [],
+            "itreed": {
+              "server": "jupyter",
+              "kernel": "python2",
+              "variant": "default"
+            },
+            "waiting": false,
+            "started": 1480444357850,
+            "session": "1277ddc4-c5b8-4fd1-8355-fc88b9fafd28",
+            "executed": "ttree_raw[ttree_raw.keys()[0]]",
+            "finished": 1480444357891,
+            "display_collapsed": false,
+            "outputs": [
+              {
+                "text/plain": "{u'alternate_slugs': [],\n u'author_key': u'ag5zfmtoYW4tYWNhZGVteXIXCxIIVXNlckRhdGEiCVRvbWVyIEdhbAw',\n u'background_image_caption': u'',\n u'background_image_url': u'',\n u'branding_image_url': u'',\n u'child_data': [{u'_ndb_key': {u'app': u's~khan-academy',\n    u'namespace': u'',\n    u'pairs': [[u'Video', 1254705646]]}},\n  {u'_ndb_key': {u'app': u's~khan-academy',\n    u'namespace': u'',\n    u'pairs': [[u'Video', u'x0c7d59f7']]}},\n  {u'_ndb_key': {u'app': u's~khan-academy',\n    u'namespace': u'',\n    u'pairs': [[u'Exercise', u'x19f363fe']]}}],\n u'content_id': u'x805ffdc1',\n u'creation_date': u'2016-09-13 20:36:32.275010',\n u'curation': {},\n u'curriculum_key': u'',\n u'custom_description_tag': u'',\n u'custom_title_tag': u'',\n u'description': u'Understand the subtle differences and similarities between functions and equations. In this exercise, we will see how an equation can be turned into a function.',\n u'do_not_publish': False,\n u'facebook_url': u'',\n u'gplus_url': u'',\n u'hide': False,\n u'icon_src': u'',\n u'importable': True,\n u'imported_from_sha': None,\n u'in_knowledge_map': False,\n u'key': u'ag5zfmtoYW4tYWNhZGVteXI7CxINVG9waWNSZXZpc2lvbiIoZDg4OGMzYzk2OWVmMzUyOTQ3OWQ3NmU3OGMyZTEwODU1MzUxMTBjZAw',\n u'key_id': u'd888c3c969ef3529479d76e78c2e1085535110cd',\n u'listed': True,\n u'listed_locales': [],\n u'logo_image_url': u'',\n u'parent_key': None,\n u'render_type': u'Tutorial',\n u'slug': u'alg-functions-and-equations',\n u'source_language': u'en',\n u'standalone_title': u'Functions and equations',\n u'tags': [],\n u'title': u'Functions and equations',\n u'twitter_url': u'',\n u'user_authored_content_types': [],\n u'web_url': u'',\n u'x_pos': 0.0,\n u'y_pos': 0.0}",
+                "type": "display",
+                "metadata": {}
+              }
+            ]
+          },
+          {
+            "created": 1480438227235,
+            "modified": 1480444357982,
+            "collapsed": true,
+            "content": "def get_parents(nodes):\n  parents = defaultdict(set)\n  types = {}\n  for k, v in nodes.items():\n    for child in v['child_data']:\n      type, key = child['_ndb_key']['pairs'][0]\n      types[key] = type\n      parents[key].add(k)\n      # if child['pairs'][0][0] == 'Topic'\n  return parents, types",
+            "type": "ipython",
+            "children": [],
+            "itreed": {
+              "server": "jupyter",
+              "kernel": "python2",
+              "variant": "default"
+            },
+            "waiting": false,
+            "started": 1480444357888,
+            "session": "1277ddc4-c5b8-4fd1-8355-fc88b9fafd28",
+            "executed": "def get_parents(nodes):\n  parents = defaultdict(set)\n  types = {}\n  for k, v in nodes.items():\n    for child in v['child_data']:\n      type, key = child['_ndb_key']['pairs'][0]\n      types[key] = type\n      parents[key].add(k)\n      # if child['pairs'][0][0] == 'Topic'\n  return parents, types",
+            "finished": 1480444357982,
+            "display_collapsed": false,
+            "outputs": []
+          },
+          {
+            "created": 1480438432671,
+            "modified": 1480444358009,
+            "collapsed": true,
+            "content": "parents, types = get_parents(ttree_raw)",
+            "type": "ipython",
+            "children": [],
+            "itreed": {
+              "server": "jupyter",
+              "kernel": "python2",
+              "variant": "default"
+            },
+            "waiting": false,
+            "started": 1480444357891,
+            "session": "1277ddc4-c5b8-4fd1-8355-fc88b9fafd28",
+            "executed": "parents, types = get_parents(ttree_raw)",
+            "finished": 1480444358009,
+            "display_collapsed": false,
+            "outputs": []
+          },
+          {
+            "created": 1480438467084,
+            "modified": 1480444358010,
+            "collapsed": true,
+            "content": "parentless = ([(k, v['title']) for k, v in ttree_raw.items() if k not in parents])",
+            "type": "ipython",
+            "children": [],
+            "itreed": {
+              "server": "jupyter",
+              "kernel": "python2",
+              "variant": "default"
+            },
+            "waiting": false,
+            "started": 1480444357983,
+            "session": "1277ddc4-c5b8-4fd1-8355-fc88b9fafd28",
+            "executed": "parentless = ([(k, v['title']) for k, v in ttree_raw.items() if k not in parents])",
+            "finished": 1480444358010,
+            "display_collapsed": false,
+            "outputs": []
+          },
+          {
+            "created": 1480438873918,
+            "modified": 1480444358043,
+            "collapsed": true,
+            "content": "bytitle = defaultdict(set)",
+            "type": "ipython",
+            "children": [],
+            "itreed": {
+              "server": "jupyter",
+              "kernel": "python2",
+              "variant": "default"
+            },
+            "waiting": false,
+            "started": 1480444358009,
+            "session": "1277ddc4-c5b8-4fd1-8355-fc88b9fafd28",
+            "executed": "bytitle = defaultdict(set)",
+            "finished": 1480444358043,
+            "display_collapsed": false,
+            "outputs": []
+          },
+          {
+            "created": 1480438882303,
+            "modified": 1480444358044,
+            "collapsed": true,
+            "content": "for k, v in ttree_raw.items():\n  bytitle[v['title']].add(k)",
+            "type": "ipython",
+            "children": [],
+            "itreed": {
+              "server": "jupyter",
+              "kernel": "python2",
+              "variant": "default"
+            },
+            "waiting": false,
+            "started": 1480444358010,
+            "session": "1277ddc4-c5b8-4fd1-8355-fc88b9fafd28",
+            "executed": "for k, v in ttree_raw.items():\n  bytitle[v['title']].add(k)",
+            "finished": 1480444358043,
+            "display_collapsed": false,
+            "outputs": []
+          },
+          {
+            "created": 1480438940795,
+            "modified": 1480444358423,
+            "collapsed": true,
+            "content": "child_titles = {}",
+            "type": "ipython",
+            "children": [],
+            "itreed": {
+              "server": "jupyter",
+              "kernel": "python2",
+              "variant": "default"
+            },
+            "waiting": false,
+            "started": 1480444358043,
+            "session": "1277ddc4-c5b8-4fd1-8355-fc88b9fafd28",
+            "executed": "child_titles = {}",
+            "finished": 1480444358423,
+            "display_collapsed": false,
+            "outputs": []
+          },
+          {
+            "created": 1480438947999,
+            "modified": 1480444358423,
+            "collapsed": true,
+            "content": "for k, v in ttree_raw.items():\n  child_titles[k] = [ttree_raw.get(m['_ndb_key']['pairs'][0][1], {'title': 'not found'})['title'] for m in v['child_data'] if m['_ndb_key']['pairs'][0][0] == 'Topic']",
+            "type": "ipython",
+            "children": [],
+            "itreed": {
+              "server": "jupyter",
+              "kernel": "python2",
+              "variant": "default"
+            },
+            "waiting": false,
+            "started": 1480444358044,
+            "session": "1277ddc4-c5b8-4fd1-8355-fc88b9fafd28",
+            "executed": "for k, v in ttree_raw.items():\n  child_titles[k] = [ttree_raw.get(m['_ndb_key']['pairs'][0][1], {'title': 'not found'})['title'] for m in v['child_data'] if m['_ndb_key']['pairs'][0][0] == 'Topic']",
+            "finished": 1480444358423,
+            "display_collapsed": false,
+            "outputs": []
+          },
+          {
+            "created": 1480440278492,
+            "modified": 1480444358452,
+            "collapsed": true,
+            "content": "main_math = u'x7a488390'",
+            "type": "ipython",
+            "children": [],
+            "itreed": {
+              "server": "jupyter",
+              "kernel": "python2",
+              "variant": "default"
+            },
+            "waiting": false,
+            "started": 1480444358423,
+            "session": "1277ddc4-c5b8-4fd1-8355-fc88b9fafd28",
+            "executed": "main_math = u'x7a488390'",
+            "finished": 1480444358452,
+            "display_collapsed": false,
+            "outputs": []
+          },
+          {
+            "created": 1480438899416,
+            "modified": 1480444358488,
+            "collapsed": true,
+            "content": "child_titles[main_math]",
+            "type": "ipython",
+            "children": [],
+            "itreed": {
+              "server": "jupyter",
+              "kernel": "python2",
+              "variant": "default"
+            },
+            "waiting": false,
+            "started": 1480444358424,
+            "session": "1277ddc4-c5b8-4fd1-8355-fc88b9fafd28",
+            "executed": "child_titles[main_math]",
+            "finished": 1480444358488,
+            "display_collapsed": false,
+            "outputs": [
+              {
+                "text/plain": "[u'K-8th grades',\n u'EngageNY-aligned classes',\n u'High school math',\n u'Early math',\n u'Kindergarten (U.S.)',\n u'1st grade (U.S.)',\n u'2nd grade (U.S)',\n u'3rd grade (U.S.)',\n u'4th grade (U.S.)',\n u'5th grade (U.S.)',\n u'6th grade (U.S.)',\n u'7th grade (U.S.)',\n u'8th grade (U.S.)',\n u'Arithmetic',\n u'Arithmetic essentials',\n u'Pre-algebra',\n u'Algebra',\n u'Algebra basics',\n u'Algebra I',\n u'Algebra II',\n u'Geometry',\n u'Basic geometry',\n u'High school geometry',\n u'Trigonometry',\n u'Statistics and probability',\n u'High school statistics',\n u'AP Statistics (in development)',\n u'Precalculus',\n u'Calculus',\n u'Differential calculus',\n u'Integral calculus',\n u'AP Calculus AB',\n u'NEW AP Calculus AB',\n u'Limits in AP Calculus',\n u'AP Calculus BC',\n u'Multivariable calculus',\n u'Differential equations',\n u'Linear algebra',\n u'Math for fun and glory',\n u'Mathematics I',\n u'Mathematics II',\n u'Mathematics III',\n u'6th Grade (BC)',\n u'6th grade (Ontario)',\n u'ENEM',\n u'CP',\n u'CE1',\n u'CE2',\n u'CM1',\n u'CM2',\n u'Sixi\\xe8me',\n u'Cinqui\\xe8me',\n u'Quatri\\xe8me',\n u'Seconde (ORIGINAL)',\n u'Premi\\xe8re',\n u'6th grade (WNCP)',\n u'Grade 5 (NCERT)',\n u'Grade 6 (NCERT)',\n u'Grade 7 (NCERT)',\n u'Grade 8 (NCERT)',\n u'Grades 5\\u20138 (NCERT)',\n u'3rd grade (EngageNY)',\n u'4th grade (EngageNY)',\n u'5th grade (EngageNY)',\n u'6th grade (EngageNY)',\n 'not found',\n u'7th grade (EngageNY)',\n u'8th grade (EngageNY)',\n u'1\\xb0 Primaria',\n u'2\\xb0 Primaria',\n u'3\\xb0 Primaria',\n u'4\\xb0 Primaria',\n u'5\\xb0 Primaria',\n u'6\\xb0 Primaria',\n u'1\\xb0 Secundaria',\n u'2\\xb0 Secundaria',\n u'3\\xb0 Secundaria',\n u'1\\xb0 Semestre Bachillerato',\n u'2\\xb0 Semestre Bachillerato',\n u'3\\xb0 Semestre Bachillerato',\n u'4\\xb0 Semestre Bachillerato',\n u'5\\xb0 Semestre Bachillerato',\n u'6\\xb0 Semestre Bachillerato',\n u'Matem\\xe1ticas por grado',\n u'NCERT STD VI',\n u'Cycle 2',\n u'Cycle 3',\n u'Cycle 4',\n u'Seconde',\n u'Premi\\xe8re S',\n u'Terminale S']",
+                "type": "display",
+                "metadata": {}
+              }
+            ]
+          },
+          {
+            "created": 1480440202767,
+            "modified": 1480440202767,
+            "collapsed": false,
+            "content": "What are the top level visible topics?",
+            "type": "base",
+            "children": [
+              {
+                "created": 1480439202887,
+                "modified": 1480444358489,
+                "collapsed": true,
+                "content": "top_levels = [(k, ttree_raw[k]['title']) for k in parents \n                 if parents[k] == set([u'x00000000']) \n                  and not ttree_raw[k]['hide'] \n                  and ttree_raw[k]['listed']]",
+                "type": "ipython",
+                "children": [],
+                "itreed": {
+                  "server": "jupyter",
+                  "kernel": "python2",
+                  "variant": "default"
+                },
+                "waiting": false,
+                "started": 1480444358452,
+                "session": "1277ddc4-c5b8-4fd1-8355-fc88b9fafd28",
+                "executed": "top_levels = [(k, ttree_raw[k]['title']) for k in parents \n                 if parents[k] == set([u'x00000000']) \n                  and not ttree_raw[k]['hide'] \n                  and ttree_raw[k]['listed']]",
+                "finished": 1480444358489,
+                "display_collapsed": false,
+                "outputs": []
+              },
+              {
+                "created": 1480439350037,
+                "modified": 1480444358490,
+                "collapsed": true,
+                "content": "top_levels",
+                "type": "ipython",
+                "children": [],
+                "itreed": {
+                  "server": "jupyter",
+                  "kernel": "python2",
+                  "variant": "default"
+                },
+                "waiting": false,
+                "started": 1480444358489,
+                "session": "1277ddc4-c5b8-4fd1-8355-fc88b9fafd28",
+                "executed": "top_levels",
+                "finished": 1480444358490,
+                "display_collapsed": false,
+                "outputs": [
+                  {
+                    "text/plain": "[(u'x1415bfac', u'College admissions'),\n (u'xd1039e22', u'Talks and interviews'),\n (u'x7a488390', u'Math'),\n (u'x54390c7e', u'Partner content'),\n (u'xb92336a2', u'Science'),\n (u'x6a4a5e33', u'KA Educator'),\n (u'x29232c6b', u'New and noteworthy'),\n (u'x45aed616', u'Computing'),\n (u'x905db83d', u'Arts and humanities'),\n (u'x22bac3dd', u'Student resources'),\n (u'x7626d097', u'Test prep'),\n (u'x5ca94af1', u'Economics and finance')]",
+                    "type": "display",
+                    "metadata": {}
+                  }
+                ]
+              }
+            ],
+            "itreed": {
+              "server": "jupyter",
+              "kernel": "python2",
+              "variant": "default"
+            }
+          },
+          {
+            "created": 1480440217191,
+            "modified": 1480440230708,
+            "collapsed": true,
+            "content": "Setup",
+            "type": "base",
+            "children": [
+              {
+                "created": 1480439545827,
+                "modified": 1480444358490,
+                "collapsed": true,
+                "content": "segmented = {k: defaultdict(set) for k, _ in top_levels}",
+                "type": "ipython",
+                "children": [],
+                "itreed": {
+                  "server": "jupyter",
+                  "kernel": "python2",
+                  "variant": "default"
+                },
+                "waiting": false,
+                "started": 1480444358489,
+                "session": "1277ddc4-c5b8-4fd1-8355-fc88b9fafd28",
+                "executed": "segmented = {k: defaultdict(set) for k, _ in top_levels}",
+                "finished": 1480444358490,
+                "display_collapsed": false,
+                "outputs": []
+              },
+              {
+                "created": 1480439567545,
+                "modified": 1480444358532,
+                "collapsed": true,
+                "content": "segmented",
+                "type": "ipython",
+                "children": [],
+                "itreed": {
+                  "server": "jupyter",
+                  "kernel": "python2",
+                  "variant": "default"
+                },
+                "waiting": false,
+                "started": 1480444358490,
+                "session": "1277ddc4-c5b8-4fd1-8355-fc88b9fafd28",
+                "executed": "segmented",
+                "finished": 1480444358532,
+                "display_collapsed": false,
+                "outputs": [
+                  {
+                    "text/plain": "{u'x1415bfac': defaultdict(set, {}),\n u'x22bac3dd': defaultdict(set, {}),\n u'x29232c6b': defaultdict(set, {}),\n u'x45aed616': defaultdict(set, {}),\n u'x54390c7e': defaultdict(set, {}),\n u'x5ca94af1': defaultdict(set, {}),\n u'x6a4a5e33': defaultdict(set, {}),\n u'x7626d097': defaultdict(set, {}),\n u'x7a488390': defaultdict(set, {}),\n u'x905db83d': defaultdict(set, {}),\n u'xb92336a2': defaultdict(set, {}),\n u'xd1039e22': defaultdict(set, {})}",
+                    "type": "display",
+                    "metadata": {}
+                  }
+                ]
+              },
+              {
+                "created": 1480439574703,
+                "modified": 1480444358559,
+                "collapsed": true,
+                "content": "def crawl(base, tree, at):\n  if at not in tree:\n    print 'unknown topic', at\n    return\n  for child in tree[at]['child_data']:\n    p = child['_ndb_key']['pairs']\n    if len(p) != 1:\n      print \"WHAT\", p\n    if p[0][0] == 'Topic':\n      if p[0][1] not in tree or not tree[p[0][1]]['listed'] or tree[p[0][1]]['hide']:\n        continue\n      crawl(base, tree, p[0][1])\n    segmented[base][p[0][0]].add(p[0][1])\n",
+                "type": "ipython",
+                "children": [],
+                "itreed": {
+                  "server": "jupyter",
+                  "kernel": "python2",
+                  "variant": "default"
+                },
+                "waiting": false,
+                "started": 1480444358490,
+                "session": "1277ddc4-c5b8-4fd1-8355-fc88b9fafd28",
+                "executed": "def crawl(base, tree, at):\n  if at not in tree:\n    print 'unknown topic', at\n    return\n  for child in tree[at]['child_data']:\n    p = child['_ndb_key']['pairs']\n    if len(p) != 1:\n      print \"WHAT\", p\n    if p[0][0] == 'Topic':\n      if p[0][1] not in tree or not tree[p[0][1]]['listed'] or tree[p[0][1]]['hide']:\n        continue\n      crawl(base, tree, p[0][1])\n    segmented[base][p[0][0]].add(p[0][1])\n",
+                "finished": 1480444358559,
+                "display_collapsed": false,
+                "outputs": []
+              },
+              {
+                "created": 1480439757105,
+                "modified": 1480444358560,
+                "collapsed": true,
+                "content": "tuple(crawl(k, ttree_raw, k) for k in segmented);1",
+                "type": "ipython",
+                "children": [],
+                "itreed": {
+                  "server": "jupyter",
+                  "kernel": "python2",
+                  "variant": "default"
+                },
+                "waiting": false,
+                "started": 1480444358532,
+                "session": "1277ddc4-c5b8-4fd1-8355-fc88b9fafd28",
+                "executed": "tuple(crawl(k, ttree_raw, k) for k in segmented);1",
+                "finished": 1480444358560,
+                "display_collapsed": false,
+                "outputs": [
+                  {
+                    "text/plain": "1",
+                    "type": "display",
+                    "metadata": {}
+                  }
+                ]
+              },
+              {
+                "created": 1480439793199,
+                "modified": 1480444358560,
+                "collapsed": true,
+                "content": "[(k, len(v)) for k, v in segmented[main_math].items()]",
+                "type": "ipython",
+                "children": [],
+                "itreed": {
+                  "server": "jupyter",
+                  "kernel": "python2",
+                  "variant": "default"
+                },
+                "waiting": false,
+                "started": 1480444358559,
+                "session": "1277ddc4-c5b8-4fd1-8355-fc88b9fafd28",
+                "executed": "[(k, len(v)) for k, v in segmented[main_math].items()]",
+                "finished": 1480444358560,
+                "display_collapsed": false,
+                "outputs": [
+                  {
+                    "text/plain": "[(u'Topic', 3351),\n (u'Article', 547),\n (u'Scratchpad', 3),\n (u'Video', 3223),\n (u'Exercise', 1366)]",
+                    "type": "display",
+                    "metadata": {}
+                  }
+                ]
+              }
+            ],
+            "itreed": {
+              "server": "jupyter",
+              "kernel": "python2",
+              "variant": "default"
+            }
+          },
+          {
+            "created": 1480440181072,
+            "modified": 1480444502340,
+            "collapsed": true,
+            "content": "How many of each thing do the top level topics contain?",
+            "type": "base",
+            "children": [
+              {
+                "content": "[(ttree_raw[t]['title'], [(k, len(v)) for k, v in segmented[t].items()]) for t in segmented]",
+                "children": [],
+                "created": 1480439793199,
+                "modified": 1480444358592,
+                "collapsed": true,
+                "type": "ipython",
+                "itreed": {
+                  "server": "jupyter",
+                  "kernel": "python2",
+                  "variant": "default"
+                },
+                "waiting": false,
+                "started": 1480444358560,
+                "session": "1277ddc4-c5b8-4fd1-8355-fc88b9fafd28",
+                "executed": "[(ttree_raw[t]['title'], [(k, len(v)) for k, v in segmented[t].items()]) for t in segmented]",
+                "finished": 1480444358592,
+                "display_collapsed": false,
+                "outputs": [
+                  {
+                    "text/plain": "[(u'Science',\n  [(u'Topic', 665),\n   (u'Article', 391),\n   (u'Scratchpad', 38),\n   (u'Video', 2308),\n   (u'Exercise', 94)]),\n (u'Student resources', []),\n (u'Partner content',\n  [(u'Topic', 511),\n   (u'Article', 790),\n   (u'Scratchpad', 44),\n   (u'Video', 1656),\n   (u'Exercise', 230)]),\n (u'New and noteworthy', [(u'Video', 30)]),\n (u'Arts and humanities',\n  [(u'Topic', 505), (u'Article', 1045), (u'Video', 1322), (u'Exercise', 341)]),\n (u'Math',\n  [(u'Topic', 3351),\n   (u'Article', 547),\n   (u'Scratchpad', 3),\n   (u'Video', 3223),\n   (u'Exercise', 1366)]),\n (u'KA Educator', [(u'Topic', 44), (u'Article', 135), (u'Video', 59)]),\n (u'College admissions', [(u'Topic', 32), (u'Article', 25), (u'Video', 102)]),\n (u'Test prep',\n  [(u'Topic', 294),\n   (u'Article', 156),\n   (u'Scratchpad', 1),\n   (u'Video', 1781),\n   (u'Exercise', 613)]),\n (u'Computing',\n  [(u'Topic', 110),\n   (u'Article', 206),\n   (u'Scratchpad', 334),\n   (u'Video', 80),\n   (u'Exercise', 29)]),\n (u'Talks and interviews', [(u'Topic', 3), (u'Article', 1), (u'Video', 36)]),\n (u'Economics and finance',\n  [(u'Topic', 152), (u'Article', 59), (u'Video', 492), (u'Exercise', 2)])]",
+                    "type": "display",
+                    "metadata": {}
+                  }
+                ]
+              }
+            ],
+            "itreed": {
+              "server": "jupyter",
+              "kernel": "python2",
+              "variant": "default"
+            }
+          },
+          {
+            "created": 1480440125621,
+            "modified": 1480444500428,
+            "collapsed": true,
+            "content": "How much exercise sharing is there? Not much between Math and the other subjects at least",
+            "type": "base",
+            "children": [
+              {
+                "created": 1480440093358,
+                "modified": 1480444358592,
+                "collapsed": true,
+                "content": "[(ttree_raw[k]['title'], len(segmented[main_math]['Exercise'].intersection(segmented[k]['Exercise']))) for k in segmented]",
+                "type": "ipython",
+                "children": [],
+                "itreed": {
+                  "server": "jupyter",
+                  "kernel": "python2",
+                  "variant": "default"
+                },
+                "waiting": false,
+                "started": 1480444358561,
+                "session": "1277ddc4-c5b8-4fd1-8355-fc88b9fafd28",
+                "executed": "[(ttree_raw[k]['title'], len(segmented[main_math]['Exercise'].intersection(segmented[k]['Exercise']))) for k in segmented]",
+                "finished": 1480444358592,
+                "display_collapsed": false,
+                "outputs": [
+                  {
+                    "text/plain": "[(u'Science', 0),\n (u'Student resources', 0),\n (u'Partner content', 8),\n (u'New and noteworthy', 0),\n (u'Arts and humanities', 0),\n (u'Math', 1366),\n (u'KA Educator', 0),\n (u'College admissions', 0),\n (u'Test prep', 0),\n (u'Computing', 1),\n (u'Talks and interviews', 0),\n (u'Economics and finance', 0)]",
+                    "type": "display",
+                    "metadata": {}
+                  }
+                ]
+              }
+            ],
+            "itreed": {
+              "server": "jupyter",
+              "kernel": "python2",
+              "variant": "default"
+            }
+          },
+          {
+            "created": 1480440389820,
+            "modified": 1480444498804,
+            "collapsed": true,
+            "content": "Mapping exercises to assesment items",
+            "type": "base",
+            "children": [
+              {
+                "created": 1480440423747,
+                "modified": 1480444494575,
+                "collapsed": true,
+                "content": "math_exercises = list(segmented[main_math]['Exercise'])",
+                "type": "ipython",
+                "children": [],
+                "itreed": {
+                  "server": "jupyter",
+                  "kernel": "python2",
+                  "variant": "default"
+                },
+                "waiting": false,
+                "started": 1480444494143,
+                "session": "1277ddc4-c5b8-4fd1-8355-fc88b9fafd28",
+                "executed": "math_exercises = list(segmented[main_math]['Exercise'])",
+                "finished": 1480444494575,
+                "display_collapsed": false,
+                "outputs": []
+              },
+              {
+                "created": 1480440400334,
+                "modified": 1480444494588,
+                "collapsed": true,
+                "content": "exercises = json.load(open('./0-get-data/exercises.json'))",
+                "type": "ipython",
+                "children": [],
+                "itreed": {
+                  "server": "jupyter",
+                  "kernel": "python2",
+                  "variant": "default"
+                },
+                "waiting": false,
+                "started": 1480444494169,
+                "session": "1277ddc4-c5b8-4fd1-8355-fc88b9fafd28",
+                "executed": "exercises = json.load(open('./0-get-data/exercises.json'))",
+                "finished": 1480444494588,
+                "display_collapsed": false,
+                "outputs": []
+              },
+              {
+                "created": 1480440477402,
+                "modified": 1480444494635,
+                "collapsed": true,
+                "content": "def flatten(m):\n  res = []\n  for l in m:\n    res += list(l)\n  return res",
+                "type": "ipython",
+                "children": [],
+                "itreed": {
+                  "server": "jupyter",
+                  "kernel": "python2",
+                  "variant": "default"
+                },
+                "waiting": false,
+                "started": 1480444494576,
+                "session": "1277ddc4-c5b8-4fd1-8355-fc88b9fafd28",
+                "executed": "def flatten(m):\n  res = []\n  for l in m:\n    res += list(l)\n  return res",
+                "finished": 1480444494635,
+                "display_collapsed": false,
+                "outputs": []
+              },
+              {
+                "created": 1480440459985,
+                "modified": 1480444494649,
+                "collapsed": true,
+                "content": "items_for_exercises = {k: flatten((item['id'] for item in pt['items']) for pt in exercises[k]['problem_types']) for k in exercises}",
+                "type": "ipython",
+                "children": [],
+                "itreed": {
+                  "server": "jupyter",
+                  "kernel": "python2",
+                  "variant": "default"
+                },
+                "waiting": false,
+                "started": 1480444494588,
+                "session": "1277ddc4-c5b8-4fd1-8355-fc88b9fafd28",
+                "executed": "items_for_exercises = {k: flatten((item['id'] for item in pt['items']) for pt in exercises[k]['problem_types']) for k in exercises}",
+                "finished": 1480444494649,
+                "display_collapsed": false,
+                "outputs": []
+              },
+              {
+                "created": 1480440552369,
+                "modified": 1480444494664,
+                "collapsed": true,
+                "content": "items_for_exercises[math_exercises[0]]",
+                "type": "ipython",
+                "children": [],
+                "itreed": {
+                  "server": "jupyter",
+                  "kernel": "python2",
+                  "variant": "default"
+                },
+                "waiting": false,
+                "started": 1480444494635,
+                "session": "1277ddc4-c5b8-4fd1-8355-fc88b9fafd28",
+                "executed": "items_for_exercises[math_exercises[0]]",
+                "finished": 1480444494664,
+                "display_collapsed": false,
+                "outputs": [
+                  {
+                    "text/plain": "[u'x071a67e238d17911',\n u'x5363d5e807a4240d',\n u'xe272f120f084e615',\n u'x4485e8a8afe58b73',\n u'xa03e0ac98c3da1e4',\n u'xfeaf912ab1ed9839',\n u'x90b2ac7e9a4478ec',\n u'x3f824a6e795579a7',\n u'xcc5598c36e28cdcd',\n u'x2b8cd17d3148d894',\n u'x068db3ea3d751d7b',\n u'x55b0163ef5929c89',\n u'x4b1f2474ad9e1fe8',\n u'x301aa370cca25d9b',\n u'x1abaf3090e5af86c',\n u'xae69ae6ceaa1504c',\n u'x8596dbd12ec9a8a1',\n u'xff9c9e0015619318',\n u'xc7fee93cb17f832b',\n u'xff571cfb1bfb2a6b']",
+                    "type": "display",
+                    "metadata": {}
+                  }
+                ]
+              },
+              {
+                "created": 1480440628811,
+                "modified": 1480444494703,
+                "collapsed": true,
+                "content": "math_items = set(flatten(items_for_exercises[e] for e in math_exercises if e in items_for_exercises and not exercises[e]['hide'] and exercises[e]['listed'] and not exercises[e]['do_not_publish']))",
+                "type": "ipython",
+                "children": [],
+                "itreed": {
+                  "server": "jupyter",
+                  "kernel": "python2",
+                  "variant": "default"
+                },
+                "waiting": false,
+                "started": 1480444494650,
+                "session": "1277ddc4-c5b8-4fd1-8355-fc88b9fafd28",
+                "executed": "math_items = set(flatten(items_for_exercises[e] for e in math_exercises if e in items_for_exercises and not exercises[e]['hide'] and exercises[e]['listed'] and not exercises[e]['do_not_publish']))",
+                "finished": 1480444494703,
+                "display_collapsed": false,
+                "outputs": []
+              },
+              {
+                "created": 1480441176236,
+                "modified": 1480444494705,
+                "collapsed": true,
+                "content": "segmented_items = {k: set(flatten(items_for_exercises[e] for e in segmented[k]['Exercise'] if e in items_for_exercises and not exercises[e]['hide'] and exercises[e]['listed'] and not exercises[e]['do_not_publish'])) for k in segmented}",
+                "type": "ipython",
+                "children": [],
+                "itreed": {
+                  "server": "jupyter",
+                  "kernel": "python2",
+                  "variant": "default"
+                },
+                "waiting": false,
+                "started": 1480444494664,
+                "session": "1277ddc4-c5b8-4fd1-8355-fc88b9fafd28",
+                "executed": "segmented_items = {k: set(flatten(items_for_exercises[e] for e in segmented[k]['Exercise'] if e in items_for_exercises and not exercises[e]['hide'] and exercises[e]['listed'] and not exercises[e]['do_not_publish'])) for k in segmented}",
+                "finished": 1480444494705,
+                "display_collapsed": false,
+                "outputs": []
+              },
+              {
+                "created": 1480441216483,
+                "modified": 1480444494706,
+                "collapsed": true,
+                "content": "[(ttree_raw[k]['title'], len(segmented_items[k])) for k in segmented]",
+                "type": "ipython",
+                "children": [],
+                "itreed": {
+                  "server": "jupyter",
+                  "kernel": "python2",
+                  "variant": "default"
+                },
+                "waiting": false,
+                "started": 1480444494704,
+                "session": "1277ddc4-c5b8-4fd1-8355-fc88b9fafd28",
+                "executed": "[(ttree_raw[k]['title'], len(segmented_items[k])) for k in segmented]",
+                "finished": 1480444494705,
+                "display_collapsed": false,
+                "outputs": [
+                  {
+                    "text/plain": "[(u'Science', 697),\n (u'Student resources', 0),\n (u'Partner content', 1851),\n (u'New and noteworthy', 0),\n (u'Arts and humanities', 3407),\n (u'Math', 22333),\n (u'KA Educator', 0),\n (u'College admissions', 0),\n (u'Test prep', 3975),\n (u'Computing', 253),\n (u'Talks and interviews', 0),\n (u'Economics and finance', 58)]",
+                    "type": "display",
+                    "metadata": {}
+                  }
+                ]
+              },
+              {
+                "created": 1480441289240,
+                "modified": 1480444494706,
+                "collapsed": true,
+                "content": "math_items = segmented_items[main_math]",
+                "type": "ipython",
+                "children": [],
+                "itreed": {
+                  "server": "jupyter",
+                  "kernel": "python2",
+                  "variant": "default"
+                },
+                "waiting": false,
+                "started": 1480444494705,
+                "session": "1277ddc4-c5b8-4fd1-8355-fc88b9fafd28",
+                "executed": "math_items = segmented_items[main_math]",
+                "finished": 1480444494706,
+                "display_collapsed": false,
+                "outputs": []
+              },
+              {
+                "created": 1480440657754,
+                "modified": 1480444494707,
+                "collapsed": true,
+                "content": "len(math_items)",
+                "type": "ipython",
+                "children": [],
+                "itreed": {
+                  "server": "jupyter",
+                  "kernel": "python2",
+                  "variant": "default"
+                },
+                "waiting": false,
+                "started": 1480444494706,
+                "session": "1277ddc4-c5b8-4fd1-8355-fc88b9fafd28",
+                "executed": "len(math_items)",
+                "finished": 1480444494707,
+                "display_collapsed": false,
+                "outputs": [
+                  {
+                    "text/plain": "22333",
+                    "type": "display",
+                    "metadata": {}
+                  }
+                ]
+              },
+              {
+                "created": 1480440412627,
+                "modified": 1480444494708,
+                "collapsed": true,
+                "content": "exercises[math_exercises[0]]",
+                "type": "ipython",
+                "children": [],
+                "itreed": {
+                  "server": "jupyter",
+                  "kernel": "python2",
+                  "variant": "default"
+                },
+                "waiting": false,
+                "started": 1480444494706,
+                "session": "1277ddc4-c5b8-4fd1-8355-fc88b9fafd28",
+                "executed": "exercises[math_exercises[0]]",
+                "finished": 1480444494708,
+                "display_collapsed": false,
+                "outputs": [
+                  {
+                    "text/plain": "{u'assessment_item_tags': [u'ag5zfmtoYW4tYWNhZGVteXI2CxIRQXNzZXNzbWVudEl0ZW1UYWciATAMCxIRQXNzZXNzbWVudEl0ZW1UYWcYgICAgM3fqQoM',\n  u'ag5zfmtoYW4tYWNhZGVteXI2CxIRQXNzZXNzbWVudEl0ZW1UYWciATAMCxIRQXNzZXNzbWVudEl0ZW1UYWcYgICAwIKTqAoM'],\n u'author_key': u'ag5zfmtoYW4tYWNhZGVteXJaCxIIVXNlckRhdGEiTHVzZXJfaWRfa2V5X2h0dHA6Ly9ub3VzZXJpZC5raGFuYWNhZGVteS5vcmcvNjZmOTNhODE4YjU2ZWUxZTliOTM1MGI2OTc2OGQ4ZTMM',\n u'author_name': u'Sarah Ledon',\n u'concept_tags': [u'Tag:xd2a5a0480c093c62'],\n u'content_id': u'x6e2a3a85',\n u'covers': [],\n u'creation_date': u'2016-10-10 21:13:41.136160',\n u'curated_related_videos': [u'x80bb662d'],\n u'custom_description_tag': u'',\n u'custom_title_tag': u'',\n u'description': u'Answer questions using line plots and data sets.',\n u'description_html': u'Answer questions using line plots and data sets.',\n u'do_not_publish': False,\n u'file_name': None,\n u'h_position': -16,\n u'hide': False,\n u'imported_from_sha': None,\n u'key': u'ag5zfmtoYW4tYWNhZGVteXI-CxIQRXhlcmNpc2VSZXZpc2lvbiIoNDUwZjcyOTNlMTJhZGIyZjdkZTk5NjI0MjA4YTdmY2FlYzZkZDZmZAw',\n u'key_id': u'450f7293e12adb2f7de99624208a7fcaec6dd6fd',\n u'listed': True,\n u'name': u'solving-problems-with-line-plots-1',\n u'parent_key': None,\n u'prerequisites': [u'subtraction_2'],\n u'pretty_display_name': u'Solve problems with line plots',\n u'problem_types': [{u'items': [{u'id': u'x071a67e238d17911',\n     u'live': True,\n     u'perseus_api_major_version': 0,\n     u'requires_screen_or_mouse': True,\n     u'sha': u'f22230a0d746d4ddcf81cb6a3048e5e00a7aa948'},\n    {u'id': u'x5363d5e807a4240d',\n     u'live': True,\n     u'perseus_api_major_version': 0,\n     u'requires_screen_or_mouse': True,\n     u'sha': u'c7f0bf4c7480e397b88691d5cd954ca1740d974d'},\n    {u'id': u'xe272f120f084e615',\n     u'live': True,\n     u'perseus_api_major_version': 0,\n     u'requires_screen_or_mouse': True,\n     u'sha': u'f3e2e65cee7b7c61c7b154239ff30cdd23fb405a'},\n    {u'id': u'x4485e8a8afe58b73',\n     u'live': True,\n     u'perseus_api_major_version': 0,\n     u'requires_screen_or_mouse': True,\n     u'sha': u'dd70ab28a416c7fe6291114d6a590c6b59a36af0'},\n    {u'id': u'xa03e0ac98c3da1e4',\n     u'live': True,\n     u'perseus_api_major_version': 0,\n     u'requires_screen_or_mouse': True,\n     u'sha': u'43181d0dab30466e9cba7b429ec3abca9e7f67ef'},\n    {u'id': u'xfeaf912ab1ed9839',\n     u'live': True,\n     u'perseus_api_major_version': 0,\n     u'requires_screen_or_mouse': True,\n     u'sha': u'54b671304d50f4295fdcd5077e0b3b31493809f9'},\n    {u'id': u'x90b2ac7e9a4478ec',\n     u'live': True,\n     u'perseus_api_major_version': 0,\n     u'requires_screen_or_mouse': True,\n     u'sha': u'873098121b0a6beeb3e9b3a8cd0cfd67ac2bf354'},\n    {u'id': u'x3f824a6e795579a7',\n     u'live': True,\n     u'perseus_api_major_version': 0,\n     u'requires_screen_or_mouse': True,\n     u'sha': u'd87b0f17cdc47197bcb3a6fd3390a93379b89407'},\n    {u'id': u'xcc5598c36e28cdcd',\n     u'live': True,\n     u'perseus_api_major_version': 0,\n     u'requires_screen_or_mouse': True,\n     u'sha': u'6aa6ac48d30fcad92c817d724d2be383e71cd7de'},\n    {u'id': u'x2b8cd17d3148d894',\n     u'live': True,\n     u'perseus_api_major_version': 0,\n     u'requires_screen_or_mouse': True,\n     u'sha': u'ac53bf3ee0800bc45c35b75d47d53e57a837970a'},\n    {u'id': u'x068db3ea3d751d7b',\n     u'live': True,\n     u'perseus_api_major_version': 0,\n     u'requires_screen_or_mouse': True,\n     u'sha': u'e62bba6948c8e9d182636bb40f688f7198fb3093'},\n    {u'id': u'x55b0163ef5929c89',\n     u'live': True,\n     u'perseus_api_major_version': 0,\n     u'requires_screen_or_mouse': True,\n     u'sha': u'32eb333cfdc8e629b5600b8802c720cfde59d13e'},\n    {u'id': u'x4b1f2474ad9e1fe8',\n     u'live': True,\n     u'perseus_api_major_version': 0,\n     u'requires_screen_or_mouse': True,\n     u'sha': u'9bcfc4d58a6da3530e364923de8c90e81093713f'},\n    {u'id': u'x301aa370cca25d9b',\n     u'live': True,\n     u'perseus_api_major_version': 0,\n     u'requires_screen_or_mouse': True,\n     u'sha': u'68e7139489f8d9a083e297eb2dea055f35b2fab0'},\n    {u'id': u'x1abaf3090e5af86c',\n     u'live': True,\n     u'perseus_api_major_version': 0,\n     u'requires_screen_or_mouse': True,\n     u'sha': u'4254631de04ef4d7a2264c3695db12e5b7d7368f'},\n    {u'id': u'xae69ae6ceaa1504c',\n     u'live': True,\n     u'perseus_api_major_version': 0,\n     u'requires_screen_or_mouse': True,\n     u'sha': u'1d956e5d4ea50ea0d73c542cccab2e0e1f88c832'},\n    {u'id': u'x8596dbd12ec9a8a1',\n     u'live': True,\n     u'perseus_api_major_version': 0,\n     u'requires_screen_or_mouse': True,\n     u'sha': u'3b4f37b86ea12f5ba9046448d8879547aec7f2ae'},\n    {u'id': u'xff9c9e0015619318',\n     u'live': True,\n     u'perseus_api_major_version': 0,\n     u'requires_screen_or_mouse': True,\n     u'sha': u'5d0646f959bdd104bed1be5a9f2ef420dd3c058c'},\n    {u'id': u'xc7fee93cb17f832b',\n     u'live': True,\n     u'perseus_api_major_version': 0,\n     u'requires_screen_or_mouse': True,\n     u'sha': u'88a2c3ae9301e86ed9836b516724b568c797af50'},\n    {u'id': u'xff571cfb1bfb2a6b',\n     u'live': True,\n     u'perseus_api_major_version': 0,\n     u'requires_screen_or_mouse': True,\n     u'sha': u'8b35afa93ae9c867ac3ad5cd1ad1a785438590f1'}],\n   u'name': u'Type 2',\n   u'related_videos': []}],\n u'seconds_per_fast_problem': 4.0,\n u'source_language': u'en',\n u'suggested_completion_criteria': u'num_correct_in_a_row_5',\n u'summative': False,\n u'tags': [],\n u'thumbnail_cache': {u'default': {u'gcs_name': u'/ka_thumbnails_cache/x6e2a3a85_35700b0c31bfeff62957061e0dfebc77_1280x720_base.png',\n   u'serving_url': u'https://lh3.googleusercontent.com/bQAsDXZB8FaEtImUSMZPjg9RtAiX5nwMnZUnFpkA-rGDa7ZWnP8VSSmdNuD8SjBpbeibLr1oQW7Uaf7Z5vzYPxU'}},\n u'thumbnail_data': {u'gcs_name': u'/ka_thumbnails/solving-problems-with-line-plots-1.png',\n  u'skip_filter': False,\n  u'title_text': u'',\n  u'url': u''},\n u'tracking_document_url': None,\n u'tutorial_only': False,\n u'v_position': 14}",
+                    "type": "display",
+                    "metadata": {}
+                  }
+                ]
+              }
+            ],
+            "itreed": {
+              "server": "jupyter",
+              "kernel": "python2",
+              "variant": "default"
+            }
+          }
+        ]
+      },
+      {
+        "created": 1480373988821,
+        "modified": 1480444402629,
+        "collapsed": true,
+        "content": "data = json.load(open('./1-js-process/parsed-assessment-items.json'))",
+        "type": "ipython",
+        "children": [],
+        "itreed": {
+          "server": "jupyter",
+          "kernel": "python2",
+          "variant": "default"
+        },
+        "waiting": false,
+        "started": 1480444376898,
+        "session": "1277ddc4-c5b8-4fd1-8355-fc88b9fafd28",
+        "executed": "data = json.load(open('./1-js-process/parsed-assessment-items.json'))",
+        "finished": 1480444402629,
+        "display_collapsed": false,
+        "outputs": []
+      },
+      {
+        "created": 1480438128605,
+        "modified": 1480444513363,
+        "collapsed": false,
+        "content": "The functions",
+        "type": "base",
+        "children": [
+          {
+            "created": 1480405949032,
+            "modified": 1480444453616,
+            "collapsed": true,
+            "content": "text_group = ('em', 'strong', 'u')",
+            "type": "ipython",
+            "children": [],
+            "itreed": {
+              "server": "jupyter",
+              "kernel": "python2",
+              "variant": "default"
+            },
+            "waiting": false,
+            "started": 1480444453615,
+            "session": "1277ddc4-c5b8-4fd1-8355-fc88b9fafd28",
+            "executed": "text_group = ('em', 'strong', 'u')",
+            "finished": 1480444453616,
+            "display_collapsed": false,
+            "outputs": []
+          },
+          {
+            "created": 1480405973703,
+            "modified": 1480444453616,
+            "collapsed": true,
+            "content": "text_math_like = ('text', 'number', 'math', 'longmath')",
+            "type": "ipython",
+            "children": [],
+            "itreed": {
+              "server": "jupyter",
+              "kernel": "python2",
+              "variant": "default"
+            },
+            "waiting": false,
+            "started": 1480444453615,
+            "session": "1277ddc4-c5b8-4fd1-8355-fc88b9fafd28",
+            "executed": "text_math_like = ('text', 'number', 'math', 'longmath')",
+            "finished": 1480444453616,
+            "display_collapsed": false,
+            "outputs": []
+          },
+          {
+            "created": 1480407809386,
+            "modified": 1480444453661,
+            "collapsed": true,
+            "content": "long_texts = []",
+            "type": "ipython",
+            "children": [],
+            "itreed": {
+              "server": "jupyter",
+              "kernel": "python2",
+              "variant": "default"
+            },
+            "waiting": false,
+            "started": 1480444453616,
+            "session": "1277ddc4-c5b8-4fd1-8355-fc88b9fafd28",
+            "executed": "long_texts = []",
+            "finished": 1480444453661,
+            "display_collapsed": false,
+            "outputs": []
+          },
+          {
+            "created": 1480378439337,
+            "modified": 1480444453662,
+            "collapsed": true,
+            "content": "def merge_text_and_math(items):\n  res = [items[0]]\n  for item in items[1:]:\n    if not item:continue\n    if item == res[-1]:continue\n    while isinstance(item, tuple) and item[0] in text_group and len(item) == 2:\n      item = item[1]\n    if isinstance(res[-1], tuple) and res[-1][0] in ('text', 'text_and_numbers'):\n      if isinstance(item, tuple) and item[0] == 'text':\n        res[-1] = ('text', res[-1][1] + item[1])\n        continue\n      elif item == 'number':\n        res[-1] = ('text', res[-1][1] + 1)\n        continue\n    elif res[-1] == 'number' and isinstance(item, tuple) and item[0] == 'text':\n      res[-1] = ('text', item[1] + 1)\n      continue\n    #  res.append(item)\n\n    #if item in ('text', 'number') and res[-1] in ('text', 'number', 'text_and_numbers'):\n    #  res[-1] = 'text' # 'text_and_numbers' - treat this just as normal text\n    #  continue\n    if item in text_math_like and res[-1] in text_math_like + ('text_and_math', 'text_and_numbers'):\n      res[-1] = 'text_and_math'\n      continue\n    if isinstance(item, tuple) and item[0] == 'text' and res[-1] in text_math_like + ('text_and_math', 'text_and_numbers',):\n      res[-1] = 'text_and_math'\n      continue\n    if item in text_math_like and isinstance(res[-1], tuple) and res[-1][0] == 'text':\n      res[-1] = 'text_and_math'\n      continue\n    if isinstance(res[-1], tuple) and res[-1][0] == 'text':\n      if res[-1][1] < 50:\n        res[-1] = 'shorttext'\n      elif res[-1][1] < 100:\n        res[-1] = 'text'\n      else:\n        long_texts.append(res[-1][1])\n        res[-1] = 'longtext'\n    res.append(item)\n  if len(res) and isinstance(res[-1], tuple) and res[-1][0] == 'text':\n    if res[-1][1] < 50:\n      res[-1] = 'shorttext'\n    elif res[-1][1] < 100:\n      res[-1] = 'text'\n    else:\n      long_texts.append(res[-1][1])\n      res[-1] = 'longtext'\n  return tuple(res)",
+            "type": "ipython",
+            "children": [],
+            "itreed": {
+              "server": "jupyter",
+              "kernel": "python2",
+              "variant": "default"
+            },
+            "waiting": false,
+            "started": 1480444453617,
+            "session": "1277ddc4-c5b8-4fd1-8355-fc88b9fafd28",
+            "executed": "def merge_text_and_math(items):\n  res = [items[0]]\n  for item in items[1:]:\n    if not item:continue\n    if item == res[-1]:continue\n    while isinstance(item, tuple) and item[0] in text_group and len(item) == 2:\n      item = item[1]\n    if isinstance(res[-1], tuple) and res[-1][0] in ('text', 'text_and_numbers'):\n      if isinstance(item, tuple) and item[0] == 'text':\n        res[-1] = ('text', res[-1][1] + item[1])\n        continue\n      elif item == 'number':\n        res[-1] = ('text', res[-1][1] + 1)\n        continue\n    elif res[-1] == 'number' and isinstance(item, tuple) and item[0] == 'text':\n      res[-1] = ('text', item[1] + 1)\n      continue\n    #  res.append(item)\n\n    #if item in ('text', 'number') and res[-1] in ('text', 'number', 'text_and_numbers'):\n    #  res[-1] = 'text' # 'text_and_numbers' - treat this just as normal text\n    #  continue\n    if item in text_math_like and res[-1] in text_math_like + ('text_and_math', 'text_and_numbers'):\n      res[-1] = 'text_and_math'\n      continue\n    if isinstance(item, tuple) and item[0] == 'text' and res[-1] in text_math_like + ('text_and_math', 'text_and_numbers',):\n      res[-1] = 'text_and_math'\n      continue\n    if item in text_math_like and isinstance(res[-1], tuple) and res[-1][0] == 'text':\n      res[-1] = 'text_and_math'\n      continue\n    if isinstance(res[-1], tuple) and res[-1][0] == 'text':\n      if res[-1][1] < 50:\n        res[-1] = 'shorttext'\n      elif res[-1][1] < 100:\n        res[-1] = 'text'\n      else:\n        long_texts.append(res[-1][1])\n        res[-1] = 'longtext'\n    res.append(item)\n  if len(res) and isinstance(res[-1], tuple) and res[-1][0] == 'text':\n    if res[-1][1] < 50:\n      res[-1] = 'shorttext'\n    elif res[-1][1] < 100:\n      res[-1] = 'text'\n    else:\n      long_texts.append(res[-1][1])\n      res[-1] = 'longtext'\n  return tuple(res)",
+            "finished": 1480444453662,
+            "display_collapsed": false,
+            "outputs": []
+          },
+          {
+            "created": 1480400657761,
+            "modified": 1480444453662,
+            "collapsed": true,
+            "content": "def children_sig(children, widgets):\n  return merge_text_and_math(tuple(typesig(child, widgets, sized=False) for child in children))",
+            "type": "ipython",
+            "children": [],
+            "itreed": {
+              "server": "jupyter",
+              "kernel": "python2",
+              "variant": "default"
+            },
+            "waiting": false,
+            "started": 1480444453661,
+            "session": "1277ddc4-c5b8-4fd1-8355-fc88b9fafd28",
+            "executed": "def children_sig(children, widgets):\n  return merge_text_and_math(tuple(typesig(child, widgets, sized=False) for child in children))",
+            "finished": 1480444453662,
+            "display_collapsed": false,
+            "outputs": []
+          },
+          {
+            "created": 1480406255907,
+            "modified": 1480444453663,
+            "collapsed": true,
+            "content": "maxmath, allmath = 0, [] # hanging on to the length of these math problems...",
+            "type": "ipython",
+            "children": [],
+            "itreed": {
+              "server": "jupyter",
+              "kernel": "python2",
+              "variant": "default"
+            },
+            "waiting": false,
+            "started": 1480444453662,
+            "session": "1277ddc4-c5b8-4fd1-8355-fc88b9fafd28",
+            "executed": "maxmath, allmath = 0, [] # hanging on to the length of these math problems...",
+            "finished": 1480444453663,
+            "display_collapsed": false,
+            "outputs": []
+          },
+          {
+            "created": 1480443406357,
+            "modified": 1480444453666,
+            "collapsed": true,
+            "content": "widget_counts = defaultdict(int)",
+            "type": "ipython",
+            "children": [],
+            "itreed": {
+              "server": "jupyter",
+              "kernel": "python2",
+              "variant": "default"
+            },
+            "waiting": false,
+            "started": 1480444453662,
+            "session": "1277ddc4-c5b8-4fd1-8355-fc88b9fafd28",
+            "executed": "widget_counts = defaultdict(int)",
+            "finished": 1480444453666,
+            "display_collapsed": false,
+            "outputs": []
+          },
+          {
+            "created": 1480443452037,
+            "modified": 1480444453684,
+            "collapsed": true,
+            "content": "widget_counts",
+            "type": "ipython",
+            "children": [],
+            "itreed": {
+              "server": "jupyter",
+              "kernel": "python2",
+              "variant": "default"
+            },
+            "waiting": false,
+            "started": 1480444453663,
+            "session": "1277ddc4-c5b8-4fd1-8355-fc88b9fafd28",
+            "executed": "widget_counts",
+            "finished": 1480444453684,
+            "display_collapsed": false,
+            "outputs": [
+              {
+                "text/plain": "defaultdict(int, {})",
+                "type": "display",
+                "metadata": {}
+              }
+            ]
+          },
+          {
+            "created": 1480378209729,
+            "modified": 1480444453716,
+            "collapsed": true,
+            "content": "def typesig(item, widgets, sized=False):\n  if item['type'] in ('paragraph',) + text_group:\n    return (item['type'],) + children_sig(item['content'], widgets)\n  if item['type'] == 'columns':\n    return ('columns', children_sig(item['col1'], widgets), children_sig(item['col2'], widgets))\n  if item['type'] == 'widget':\n    widget = widgets[item['id']]\n    if item['widgetType'] == 'radio':\n      return ('widget', 'radio', 'graded' if widget.get('graded', False) else 'ungraded', 'multi' if widget['options'].get('multipleSelect', False) else 'single', frozenset(children_sig(child['content'], widgets) for child in widget['options']['choices'] if 'content' in child))\n    wtype = item['widgetType']\n    widget_counts[wtype] += 1\n    if wtype in ('input-number', 'numeric-input'):\n      wtype = 'expression'\n    return ('widget', 'graded' if widget.get('graded', False) else 'ungraded', wtype)\n  if item['type'] == 'math' and re.match(r'^\\d+$', item['content']):\n    return 'number'\n  if item['type'] == 'math' and len(item['content']) > 10:\n    return 'longmath'\n  if item['type'] == 'blockMath' and re.match(r'^\\d+$', item['content']):\n    return 'blockNumber'\n  if item['type'] == 'blockMath' and len(item['content']) > 40:\n    allmath.append(item['content'])\n    global maxmath\n    maxmath = max(len(item['content']), maxmath)\n    return 'longBlockMath'\n  if item['type'] == 'text':\n    if not item['content'].strip():\n      return None\n    if sized:\n      return ('text', len(item['content']))\n    return 'text'\n  return item['type']",
+            "type": "ipython",
+            "children": [],
+            "itreed": {
+              "server": "jupyter",
+              "kernel": "python2",
+              "variant": "default"
+            },
+            "waiting": false,
+            "started": 1480444453666,
+            "session": "1277ddc4-c5b8-4fd1-8355-fc88b9fafd28",
+            "executed": "def typesig(item, widgets, sized=False):\n  if item['type'] in ('paragraph',) + text_group:\n    return (item['type'],) + children_sig(item['content'], widgets)\n  if item['type'] == 'columns':\n    return ('columns', children_sig(item['col1'], widgets), children_sig(item['col2'], widgets))\n  if item['type'] == 'widget':\n    widget = widgets[item['id']]\n    if item['widgetType'] == 'radio':\n      return ('widget', 'radio', 'graded' if widget.get('graded', False) else 'ungraded', 'multi' if widget['options'].get('multipleSelect', False) else 'single', frozenset(children_sig(child['content'], widgets) for child in widget['options']['choices'] if 'content' in child))\n    wtype = item['widgetType']\n    widget_counts[wtype] += 1\n    if wtype in ('input-number', 'numeric-input'):\n      wtype = 'expression'\n    return ('widget', 'graded' if widget.get('graded', False) else 'ungraded', wtype)\n  if item['type'] == 'math' and re.match(r'^\\d+$', item['content']):\n    return 'number'\n  if item['type'] == 'math' and len(item['content']) > 10:\n    return 'longmath'\n  if item['type'] == 'blockMath' and re.match(r'^\\d+$', item['content']):\n    return 'blockNumber'\n  if item['type'] == 'blockMath' and len(item['content']) > 40:\n    allmath.append(item['content'])\n    global maxmath\n    maxmath = max(len(item['content']), maxmath)\n    return 'longBlockMath'\n  if item['type'] == 'text':\n    if not item['content'].strip():\n      return None\n    if sized:\n      return ('text', len(item['content']))\n    return 'text'\n  return item['type']",
+            "finished": 1480444453716,
+            "display_collapsed": false,
+            "outputs": []
+          },
+          {
+            "created": 1480400466601,
+            "modified": 1480444533513,
+            "collapsed": true,
+            "content": "def getstuff(data):\n  counts = defaultdict(int)\n  mapping = defaultdict(list)\n  for datom in data:\n    sig = tuple(typesig(m, datom['parsed_item_data']['question'].get('widgets', {})) for m in datom['parsed_item_data']['question']['content'])\n    counts[sig] += 1\n    mapping[sig].append(datom)\n  return counts, mapping",
+            "type": "ipython",
+            "children": [],
+            "itreed": {
+              "server": "jupyter",
+              "kernel": "python2",
+              "variant": "default"
+            },
+            "waiting": false,
+            "started": 1480444533503,
+            "session": "1277ddc4-c5b8-4fd1-8355-fc88b9fafd28",
+            "executed": "def getstuff(data):\n  counts = defaultdict(int)\n  mapping = defaultdict(list)\n  for datom in data:\n    sig = tuple(typesig(m, datom['parsed_item_data']['question'].get('widgets', {})) for m in datom['parsed_item_data']['question']['content'])\n    counts[sig] += 1\n    mapping[sig].append(datom)\n  return counts, mapping",
+            "finished": 1480444533513,
+            "display_collapsed": false,
+            "outputs": []
+          }
+        ],
+        "itreed": {
+          "server": "jupyter",
+          "kernel": "python2",
+          "variant": "default"
+        }
+      },
+      {
+        "created": 1480399661774,
+        "modified": 1480399661774,
+        "collapsed": true,
+        "content": "differentiate between long stretches of text, short stretches, etc. e.g. < 50 chars, 51 - 100, >100",
+        "type": "todo",
+        "children": [],
+        "itreed": {
+          "server": "jupyter",
+          "kernel": "python2",
+          "variant": "default"
+        },
+        "done": true
+      },
+      {
+        "created": 1480405223543,
+        "modified": 1480405223543,
+        "collapsed": true,
+        "content": "also between \"short\" math (< 5 chars?) and \"long\" math",
+        "type": "todo",
+        "children": [],
+        "done": true
+      },
+      {
+        "created": 1480407923196,
+        "modified": 1480438125222,
+        "collapsed": true,
+        "content": "hist(long_texts, bins=100);",
+        "type": "ipython",
+        "children": [],
+        "itreed": {
+          "server": "jupyter",
+          "kernel": "python2",
+          "variant": "default"
+        },
+        "waiting": false,
+        "started": 1480407959416,
+        "session": "1277ddc4-c5b8-4fd1-8355-fc88b9fafd28",
+        "executed": "hist(long_texts, bins=100);",
+        "finished": 1480407959733,
+        "display_collapsed": false,
+        "outputs": [
+          {
+            "image/png": "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\n",
+            "text/plain": "<matplotlib.figure.Figure at 0x1159adcd0>",
+            "type": "display",
+            "metadata": {}
+          }
+        ]
+      },
+      {
+        "created": 1480407900564,
+        "modified": 1480438151084,
+        "collapsed": true,
+        "content": "sum(long_texts)/float(len(long_texts))",
+        "type": "ipython",
+        "children": [],
+        "itreed": {
+          "server": "jupyter",
+          "kernel": "python2",
+          "variant": "default"
+        },
+        "waiting": false,
+        "started": 1480407908600,
+        "session": "1277ddc4-c5b8-4fd1-8355-fc88b9fafd28",
+        "executed": "sum(long_texts)/float(len(long_texts))",
+        "finished": 1480407908616,
+        "display_collapsed": false,
+        "outputs": [
+          {
+            "text/plain": "254.72988352449542",
+            "type": "display",
+            "metadata": {}
+          }
+        ]
+      },
+      {
+        "created": 1480407909100,
+        "modified": 1480438151084,
+        "collapsed": true,
+        "content": "max(long_texts)",
+        "type": "ipython",
+        "children": [],
+        "itreed": {
+          "server": "jupyter",
+          "kernel": "python2",
+          "variant": "default"
+        },
+        "waiting": false,
+        "started": 1480407911766,
+        "session": "1277ddc4-c5b8-4fd1-8355-fc88b9fafd28",
+        "executed": "max(long_texts)",
+        "finished": 1480407911767,
+        "display_collapsed": false,
+        "outputs": [
+          {
+            "text/plain": "3353",
+            "type": "display",
+            "metadata": {}
+          }
+        ]
+      },
+      {
+        "created": 1480399759887,
+        "modified": 1480399759887,
+        "collapsed": true,
+        "content": "len(data)",
+        "type": "ipython",
+        "children": [],
+        "itreed": {
+          "server": "jupyter",
+          "kernel": "python2",
+          "variant": "default"
+        },
+        "waiting": false,
+        "started": 1480399763058,
+        "session": "1277ddc4-c5b8-4fd1-8355-fc88b9fafd28",
+        "executed": "len(data)",
+        "finished": 1480399763060,
+        "display_collapsed": false,
+        "outputs": [
+          {
+            "text/plain": "67990",
+            "type": "display",
+            "metadata": {}
+          }
+        ]
+      },
+      {
+        "created": 1480405727057,
+        "modified": 1480405727058,
+        "collapsed": true,
+        "content": "Running the stuff",
+        "type": "base",
+        "children": [
+          {
+            "created": 1480440938725,
+            "modified": 1480444537116,
+            "collapsed": true,
+            "content": "math_data = [m for m in data if m['content_id'] in math_items]",
+            "type": "ipython",
+            "children": [],
+            "itreed": {
+              "server": "jupyter",
+              "kernel": "python2",
+              "variant": "default"
+            },
+            "waiting": false,
+            "started": 1480444535374,
+            "session": "1277ddc4-c5b8-4fd1-8355-fc88b9fafd28",
+            "executed": "math_data = [m for m in data if m['content_id'] in math_items]",
+            "finished": 1480444537116,
+            "display_collapsed": false,
+            "outputs": []
+          },
+          {
+            "created": 1480400530679,
+            "modified": 1480444537162,
+            "collapsed": true,
+            "content": "layouts, mapping = getstuff(math_data)",
+            "type": "ipython",
+            "children": [],
+            "itreed": {
+              "server": "jupyter",
+              "kernel": "python2",
+              "variant": "default"
+            },
+            "waiting": false,
+            "started": 1480444535435,
+            "session": "1277ddc4-c5b8-4fd1-8355-fc88b9fafd28",
+            "executed": "layouts, mapping = getstuff(math_data)",
+            "finished": 1480444537161,
+            "display_collapsed": false,
+            "outputs": []
+          },
+          {
+            "created": 1480399820716,
+            "modified": 1480444537163,
+            "collapsed": true,
+            "content": "by_size = sorted((v, k) for k, v in layouts.items())[::-1]",
+            "type": "ipython",
+            "children": [],
+            "itreed": {
+              "server": "jupyter",
+              "kernel": "python2",
+              "variant": "default"
+            },
+            "waiting": false,
+            "started": 1480444537116,
+            "session": "1277ddc4-c5b8-4fd1-8355-fc88b9fafd28",
+            "executed": "by_size = sorted((v, k) for k, v in layouts.items())[::-1]",
+            "finished": 1480444537163,
+            "display_collapsed": false,
+            "outputs": []
+          },
+          {
+            "created": 1480399977814,
+            "modified": 1480444537322,
+            "collapsed": true,
+            "content": "sum([n for n, _ in by_size[:20]]) / float(len(math_data))",
+            "type": "ipython",
+            "children": [],
+            "itreed": {
+              "server": "jupyter",
+              "kernel": "python2",
+              "variant": "default"
+            },
+            "waiting": false,
+            "started": 1480444537163,
+            "session": "1277ddc4-c5b8-4fd1-8355-fc88b9fafd28",
+            "executed": "sum([n for n, _ in by_size[:20]]) / float(len(math_data))",
+            "finished": 1480444537322,
+            "display_collapsed": false,
+            "outputs": [
+              {
+                "text/plain": "0.19132608314330818",
+                "type": "display",
+                "metadata": {}
+              }
+            ]
+          },
+          {
+            "created": 1480399998789,
+            "modified": 1480406083306,
+            "collapsed": true,
+            "content": "17% of assessment items are covered by the top 20 layouts.",
+            "type": "base",
+            "children": [],
+            "itreed": {
+              "server": "jupyter",
+              "kernel": "python2",
+              "variant": "default"
+            }
+          },
+          {
+            "created": 1480399896881,
+            "modified": 1480444537323,
+            "collapsed": true,
+            "content": "num=20;bar(range(num), [n for n, _ in by_size[:num]])",
+            "type": "ipython",
+            "children": [],
+            "itreed": {
+              "server": "jupyter",
+              "kernel": "python2",
+              "variant": "default"
+            },
+            "waiting": false,
+            "started": 1480444537163,
+            "session": "1277ddc4-c5b8-4fd1-8355-fc88b9fafd28",
+            "executed": "num=20;bar(range(num), [n for n, _ in by_size[:num]])",
+            "finished": 1480444537323,
+            "display_collapsed": false,
+            "outputs": [
+              {
+                "text/plain": "<Container object of 20 artists>",
+                "type": "display",
+                "metadata": {}
+              },
+              {
+                "image/png": "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\n",
+                "text/plain": "<matplotlib.figure.Figure at 0x12c77cb90>",
+                "type": "display",
+                "metadata": {}
+              }
+            ]
+          },
+          {
+            "created": 1480399818052,
+            "modified": 1480444537324,
+            "collapsed": true,
+            "content": "len(layouts), len(mapping)",
+            "type": "ipython",
+            "children": [],
+            "itreed": {
+              "server": "jupyter",
+              "kernel": "python2",
+              "variant": "default"
+            },
+            "waiting": false,
+            "started": 1480444537322,
+            "session": "1277ddc4-c5b8-4fd1-8355-fc88b9fafd28",
+            "executed": "len(layouts), len(mapping)",
+            "finished": 1480444537324,
+            "display_collapsed": false,
+            "outputs": [
+              {
+                "text/plain": "(2858, 2858)",
+                "type": "display",
+                "metadata": {}
+              }
+            ]
+          },
+          {
+            "created": 1480406822698,
+            "modified": 1480444537359,
+            "collapsed": true,
+            "content": "perc = lambda num: '%0.2f%%' % (sum(n for n,_ in by_size[:num]) /float(len(math_data)) * 100)",
+            "type": "ipython",
+            "children": [],
+            "itreed": {
+              "server": "jupyter",
+              "kernel": "python2",
+              "variant": "default"
+            },
+            "waiting": false,
+            "started": 1480444537323,
+            "session": "1277ddc4-c5b8-4fd1-8355-fc88b9fafd28",
+            "executed": "perc = lambda num: '%0.2f%%' % (sum(n for n,_ in by_size[:num]) /float(len(math_data)) * 100)",
+            "finished": 1480444537359,
+            "display_collapsed": false,
+            "outputs": []
+          },
+          {
+            "created": 1480438009281,
+            "modified": 1480444537410,
+            "collapsed": true,
+            "content": "print ' '.join([perc(1), perc(5), perc(10), perc(20), perc(30)])",
+            "type": "ipython",
+            "children": [],
+            "itreed": {
+              "server": "jupyter",
+              "kernel": "python2",
+              "variant": "default"
+            },
+            "waiting": false,
+            "started": 1480444537324,
+            "session": "1277ddc4-c5b8-4fd1-8355-fc88b9fafd28",
+            "executed": "print ' '.join([perc(1), perc(5), perc(10), perc(20), perc(30)])",
+            "finished": 1480444537410,
+            "display_collapsed": false,
+            "outputs": [
+              {
+                "type": "stream",
+                "stream": "stdout",
+                "text": "4.34% 9.83% 13.73% 19.13% 23.08%\n"
+              }
+            ]
+          },
+          {
+            "created": 1480408050678,
+            "modified": 1480408133467,
+            "collapsed": false,
+            "content": "If ignoring text length",
+            "type": "base",
+            "children": [
+              {
+                "created": 1480406800075,
+                "modified": 1480406800075,
+                "collapsed": true,
+                "content": "4% of all math items use the most common, 8% use the top 5 configurations, 12% use the top 10, 17% use the top 20, 20% use the top 30",
+                "type": "base",
+                "children": [],
+                "itreed": {
+                  "server": "jupyter",
+                  "kernel": "python2",
+                  "variant": "default"
+                }
+              }
+            ]
+          },
+          {
+            "created": 1480408056078,
+            "modified": 1480408133556,
+            "collapsed": false,
+            "content": "Taking text length into account",
+            "type": "base",
+            "children": [
+              {
+                "created": 1480408138532,
+                "modified": 1480408138532,
+                "collapsed": true,
+                "content": "2% use most common, 6% in top 5, 9% in top 10, 15% in top 30",
+                "type": "base",
+                "children": []
+              }
+            ]
+          },
+          {
+            "created": 1480406922366,
+            "modified": 1480406922366,
+            "collapsed": true,
+            "content": "with the top 10 grabbing 15% of all items, that seems like a reasonable cutoff? also, to the extend that I can do some merging...",
+            "type": "base",
+            "children": []
+          },
+          {
+            "created": 1480441418295,
+            "modified": 1480444544947,
+            "collapsed": true,
+            "content": "mapping[by_size[0][1]][0]['parsed_item_data']['question']",
+            "type": "ipython",
+            "children": [],
+            "itreed": {
+              "server": "jupyter",
+              "kernel": "python2",
+              "variant": "default"
+            },
+            "waiting": false,
+            "started": 1480444544947,
+            "session": "1277ddc4-c5b8-4fd1-8355-fc88b9fafd28",
+            "executed": "mapping[by_size[0][1]][0]['parsed_item_data']['question']",
+            "finished": 1480444544947,
+            "display_collapsed": false,
+            "outputs": [
+              {
+                "text/plain": "{u'content': [{u'content': [{u'content': u'1.1 \\\\div 0.1=', u'type': u'math'},\n    {u'content': u' ', u'type': u'text'},\n    {u'id': u'numeric-input 1',\n     u'type': u'widget',\n     u'widgetType': u'numeric-input'}],\n   u'type': u'paragraph'}],\n u'images': {},\n u'widgets': {u'numeric-input 1': {u'alignment': u'default',\n   u'graded': True,\n   u'options': {u'answers': [{u'maxError': None,\n      u'message': u'',\n      u'simplify': u'required',\n      u'status': u'correct',\n      u'strict': False,\n      u'value': 11}],\n    u'coefficient': False,\n    u'labelText': u'',\n    u'size': u'normal',\n    u'static': False},\n   u'static': False,\n   u'type': u'numeric-input',\n   u'version': {u'major': 0, u'minor': 0}}}}",
+                "type": "display",
+                "metadata": {}
+              }
+            ]
+          },
+          {
+            "created": 1480438028938,
+            "modified": 1480444546277,
+            "collapsed": true,
+            "content": "by_size[:10]",
+            "type": "ipython",
+            "children": [],
+            "itreed": {
+              "server": "jupyter",
+              "kernel": "python2",
+              "variant": "default"
+            },
+            "waiting": false,
+            "started": 1480444546250,
+            "session": "1277ddc4-c5b8-4fd1-8355-fc88b9fafd28",
+            "executed": "by_size[:10]",
+            "finished": 1480444546277,
+            "display_collapsed": false,
+            "outputs": [
+              {
+                "text/plain": "[(990, ((u'paragraph', 'longmath', ('widget', 'graded', 'expression')),)),\n (341,\n  ((u'paragraph', (u'strong', 'text')),\n   (u'paragraph', 'longmath', ('widget', 'graded', 'expression')))),\n (319, ((u'paragraph', u'math', ('widget', 'graded', 'expression')),)),\n (312,\n  ((u'paragraph', (u'strong', 'text_and_math')),\n   (u'paragraph', ('widget', 'graded', 'expression')))),\n (280,\n  ((u'paragraph', (u'strong', 'text_and_math')),\n   (u'paragraph',\n    ('widget', 'radio', 'graded', 'single', frozenset({(u'blockMath',)}))))),\n (225,\n  ((u'paragraph', 'text_and_math'),\n   (u'paragraph', (u'strong', 'text')),\n   (u'paragraph', ('widget', 'graded', 'expression'), 'text'))),\n (189,\n  ((u'paragraph', 'text_and_math'),\n   (u'paragraph', (u'strong', 'text_and_math')),\n   (u'paragraph',\n    ('widget', 'radio', 'graded', 'single', frozenset({(u'blockMath',)}))))),\n (177,\n  ((u'paragraph', (u'strong', 'text_and_math')),\n   (u'paragraph',\n    ('widget', 'radio', 'graded', 'multi', frozenset({(u'blockMath',)}))))),\n (154,\n  ((u'paragraph', (u'strong', 'text')),\n   u'blockMath',\n   (u'paragraph', ('widget', 'graded', 'expression')))),\n (144,\n  ((u'paragraph', 'text_and_math'),\n   (u'paragraph', ('widget', 'graded', 'expression'))))]",
+                "type": "display",
+                "metadata": {}
+              }
+            ]
+          },
+          {
+            "created": 1480443093141,
+            "modified": 1480444547180,
+            "collapsed": true,
+            "content": "import clipboard",
+            "type": "ipython",
+            "children": [],
+            "itreed": {
+              "server": "jupyter",
+              "kernel": "python2",
+              "variant": "default"
+            },
+            "waiting": false,
+            "started": 1480444547153,
+            "session": "1277ddc4-c5b8-4fd1-8355-fc88b9fafd28",
+            "executed": "import clipboard",
+            "finished": 1480444547180,
+            "display_collapsed": false,
+            "outputs": []
+          },
+          {
+            "created": 1480443207128,
+            "modified": 1480444557754,
+            "collapsed": true,
+            "content": "json.dump(mapping[by_size[0][1]], open('./2-analyze/wtypes/longmath-expression.json', 'w'))",
+            "type": "ipython",
+            "children": [],
+            "itreed": {
+              "server": "jupyter",
+              "kernel": "python2",
+              "variant": "default"
+            },
+            "waiting": false,
+            "started": 1480444557234,
+            "session": "1277ddc4-c5b8-4fd1-8355-fc88b9fafd28",
+            "executed": "json.dump(mapping[by_size[0][1]], open('./2-analyze/wtypes/longmath-expression.json', 'w'))",
+            "finished": 1480444557754,
+            "display_collapsed": false,
+            "outputs": []
+          },
+          {
+            "content": "json.dump(mapping[by_size[1][1]], open('./2-analyze/wtypes/strongtext-longmath-expression.json', 'w'))",
+            "children": [],
+            "created": 1480443207128,
+            "modified": 1480444562707,
+            "collapsed": true,
+            "type": "ipython",
+            "itreed": {
+              "server": "jupyter",
+              "kernel": "python2",
+              "variant": "default"
+            },
+            "waiting": false,
+            "started": 1480444562491,
+            "session": "1277ddc4-c5b8-4fd1-8355-fc88b9fafd28",
+            "executed": "json.dump(mapping[by_size[1][1]], open('./2-analyze/wtypes/strongtext-longmath-expression.json', 'w'))",
+            "finished": 1480444562707,
+            "display_collapsed": false,
+            "outputs": []
+          },
+          {
+            "content": "json.dump(mapping[by_size[2][1]], open('./2-analyze/wtypes/math-expression.json', 'w'))",
+            "children": [],
+            "created": 1480443207128,
+            "modified": 1480444567680,
+            "collapsed": true,
+            "type": "ipython",
+            "itreed": {
+              "server": "jupyter",
+              "kernel": "python2",
+              "variant": "default"
+            },
+            "waiting": false,
+            "started": 1480444567570,
+            "session": "1277ddc4-c5b8-4fd1-8355-fc88b9fafd28",
+            "executed": "json.dump(mapping[by_size[2][1]], open('./2-analyze/wtypes/math-expression.json', 'w'))",
+            "finished": 1480444567680,
+            "display_collapsed": false,
+            "outputs": []
+          },
+          {
+            "created": 1480440751470,
+            "modified": 1480440751470,
+            "collapsed": true,
+            "content": "OOOohhh what if I could hook up some piece of text to a generated value? like \"fill in here with the value of this other node\". That would be pretty rad, and give me spreadsheet-like abilities. I might not use it too often though? idk",
+            "type": "todo",
+            "children": []
+          },
+          {
+            "created": 1480440809981,
+            "modified": 1480440809981,
+            "collapsed": true,
+            "content": "Also I want to be able to \"hide\" that a node has children - make the \"collapsed\" bar less obvious",
+            "type": "todo",
+            "children": []
+          },
+          {
+            "created": 1480440679241,
+            "modified": 1480440679241,
+            "collapsed": false,
+            "content": "Visible, listed math items as percent of all items: 32%",
+            "type": "base",
+            "children": [
+              {
+                "created": 1480440665369,
+                "modified": 1480445086204,
+                "collapsed": true,
+                "content": "len(math_items)/float(len(data))",
+                "type": "ipython",
+                "children": [],
+                "itreed": {
+                  "server": "jupyter",
+                  "kernel": "python2",
+                  "variant": "default"
+                },
+                "waiting": false,
+                "started": 1480445086176,
+                "session": "1277ddc4-c5b8-4fd1-8355-fc88b9fafd28",
+                "executed": "len(math_items)/float(len(data))",
+                "finished": 1480445086204,
+                "display_collapsed": false,
+                "outputs": [
+                  {
+                    "text/plain": "0.32847477570230915",
+                    "type": "display",
+                    "metadata": {}
+                  }
+                ]
+              }
+            ],
+            "itreed": {
+              "server": "jupyter",
+              "kernel": "python2",
+              "variant": "default"
+            }
+          }
+        ],
+        "itreed": {
+          "server": "jupyter",
+          "kernel": "python2",
+          "variant": "default"
+        }
+      },
+      {
+        "created": 1480406332391,
+        "modified": 1480406332391,
+        "collapsed": true,
+        "content": "sum(len(x) for x in allmath)/float(len(allmath))",
+        "type": "ipython",
+        "children": [],
+        "itreed": {
+          "server": "jupyter",
+          "kernel": "python2",
+          "variant": "default"
+        },
+        "waiting": false,
+        "started": 1480406991332,
+        "session": "1277ddc4-c5b8-4fd1-8355-fc88b9fafd28",
+        "executed": "sum(len(x) for x in allmath)/float(len(allmath))",
+        "finished": 1480406991347,
+        "display_collapsed": false,
+        "outputs": [
+          {
+            "text/plain": "58.04717687985015",
+            "type": "display",
+            "metadata": {}
+          }
+        ]
+      }
+    ]
+  }
+]
